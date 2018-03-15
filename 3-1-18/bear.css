@@ -1,0 +1,48 @@
+body {
+  font-family: Georgia;
+  background: #FBF9ED;
+}
+
+h1{
+  color: #F49C6A;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 50px;
+}
+.content h1{
+  border: 3px;
+}
+h2{
+  font-family: Courier New;
+  text-transform: uppercase;
+}
+
+h3{
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+a{
+  color: #F4c7A8;
+  text-decoration: none;
+}
+
+nav ul li {
+  color: #B57493;
+  font-size: 1.5em;
+  list-style-type: none;
+  display: inline-block;
+}
+#habitat{
+  color: white;
+  background-image: url("https://s3.amazonaws.com/misy350/bg-tree.jpg");
+}
+
+img {
+  border-radius: 50%;
+}
+
+a:hover {
+  background: white;
+
+}
