@@ -18,10 +18,15 @@ def users(username):
     # return "hello %s" %username
     return render_template('user.html', uname=username)
 
-@app.route('/form')
+@app.route('/form', methods=['GET', 'POST'])
 def form():
-    first_name = request.args.get('first_name')
-    return first_name
+    if request.method=='GET':
+        #return "hello GET"
+        return redner_template ('form.html')
+    if request.method=='POST':
+        first_name=request.form("first_name")
+        # return "Hi, your name is %s" % first_name
+        return redner_template ('form.html', first_name=first_name)
 
 if __name__ =='__main__':
     app.run()
